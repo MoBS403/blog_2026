@@ -5,7 +5,7 @@ O projeto é modular, seguro e estilizado com **Bootstrap 4** e **Crispy Forms**
 
 ---
 
-### 📝 Funcionalidades
+## 📝 Funcionalidades
 
 Posts: Criar, editar e excluir postagens
 
@@ -21,7 +21,7 @@ Segurança: Proteção contra tentativas de login suspeitas com axes
 
 Formulários bonitos: Utilizando Crispy Forms e Bootstrap 4
 
-📸 Demonstração
+## 📸 Demonstração
 
 (ex.: página inicial, post, painel admin, etc.)
 
@@ -63,9 +63,10 @@ Formulários bonitos: Utilizando Crispy Forms e Bootstrap 4
 ## 🚀 Executando o Projeto
 
 ### Executar migrations
-
+```bash
 python manage.py migrate
 
+```
 
 ## Criar superusuário
 python manage.py createsuperuser
@@ -91,7 +92,7 @@ DATABASES = {
         'PORT': '3306',
     }
 }
-
+```
 
 
 
