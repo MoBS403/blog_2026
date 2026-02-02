@@ -5,6 +5,22 @@ O projeto é modular, seguro e estilizado com **Bootstrap 4** e **Crispy Forms**
 
 ---
 
+### 📝 Funcionalidades
+
+Posts: Criar, editar e excluir postagens
+
+Categorias: Organizar posts por categorias
+
+Comentários: Sistema de comentários com moderação
+
+Editor WYSIWYG: Criar conteúdo com formatação avançada usando Django Summernote
+
+Autenticação: Cadastro, login e logout de usuários
+
+Segurança: Proteção contra tentativas de login suspeitas com axes
+
+Formulários bonitos: Utilizando Crispy Forms e Bootstrap 4
+
 📸 Demonstração
 
 (ex.: página inicial, post, painel admin, etc.)
@@ -37,6 +53,27 @@ O projeto é modular, seguro e estilizado com **Bootstrap 4** e **Crispy Forms**
 - `axes` – Segurança e prevenção de login suspeito  
 - `django_summernote` – Editor de texto rico (WYSIWYG)  
 
+## 📚 Links Úteis
+
+- [Django Documentation](https://docs.djangoproject.com/en/6.0/)  
+- [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)  
+- [Django Summernote](https://github.com/lqez/django-summernote)  
+- [Axes Documentation](https://django-axes.readthedocs.io/en/latest/)
+
+## 🚀 Executando o Projeto
+
+### Executar migrations
+
+python manage.py migrate
+
+
+## Criar superusuário
+python manage.py createsuperuser
+
+## Executar servidor
+
+python manage.py runserver
+
 ---
 
 ## ⚙️ Configuração do Banco de Dados MySQL
@@ -55,42 +92,11 @@ DATABASES = {
     }
 }
 
-### 📝 Funcionalidades
-
-Posts: Criar, editar e excluir postagens
-
-Categorias: Organizar posts por categorias
-
-Comentários: Sistema de comentários com moderação
-
-Editor WYSIWYG: Criar conteúdo com formatação avançada usando Django Summernote
-
-Autenticação: Cadastro, login e logout de usuários
-
-Segurança: Proteção contra tentativas de login suspeitas com axes
-
-Formulários bonitos: Utilizando Crispy Forms e Bootstrap 4
 
 
-## 🚀 Executando o Projeto
-
-### Executar migrations
-```bash
-python manage.py migrate
 
 
-## Criar superusuário
-python manage.py createsuperuser
-
-## Executar servidor
-
-python manage.py runserver
 
 
-## 📚 Links Úteis
 
-- [Django Documentation](https://docs.djangoproject.com/en/6.0/)  
-- [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)  
-- [Django Summernote](https://github.com/lqez/django-summernote)  
-- [Axes Documentation](https://django-axes.readthedocs.io/en/latest/)
 
