@@ -98,6 +98,13 @@ DATABASES = {
 ```
 
 
+## 👨‍💻 Autor
+
+**Bruno Molina Souza**
+Desenvolvedor Full Stack | 
+Análise e Desenvolvimento de Sistemas
+Projeto acadêmico e portfólio prático com Django, banco de dados e deploy em nuvem.
+---
 
 
 
