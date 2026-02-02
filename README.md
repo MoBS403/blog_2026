@@ -69,11 +69,14 @@ python manage.py migrate
 ```
 
 ## Criar superusuário
+```bash
 python manage.py createsuperuser
+```
 
 ## Executar servidor
-
+```bash
 python manage.py runserver
+```
 
 ---
 
