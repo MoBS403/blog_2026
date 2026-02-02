@@ -1,0 +1,7 @@
+Django
+django-crispy-forms
+crispy-bootstrap4
+django-axes
+django-summernote
+mysqlclient
+Pillow
