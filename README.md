@@ -25,6 +25,8 @@ Formulários bonitos: Utilizando Crispy Forms e Bootstrap 4
 
 (ex.: página inicial, post, painel admin, etc.)
 
+<p align="center"> <img src="blog1.jpg" width="700"/> <br><br> <img src="blog2.jpg" width="700"/>  <br><br> <img src="blog3.jpg" width="700"/></p>
+
 
 
 ## 🧰 Tecnologias e Bibliotecas
