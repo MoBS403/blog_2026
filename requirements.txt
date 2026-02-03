@@ -7,4 +7,5 @@ crispy-bootstrap4
 django-axes
 django-summernote
 requests
+Pillow
 
