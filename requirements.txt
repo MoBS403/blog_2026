@@ -5,3 +5,6 @@ django-axes
 django-summernote
 mysqlclient
 Pillow
+psycopg[binary]
+gunicorn
+python-dotenv
