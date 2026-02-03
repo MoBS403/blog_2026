@@ -1,10 +1,10 @@
-Django
+Django>=5.2
+gunicorn
+psycopg[binary]
+whitenoise
 django-crispy-forms
 crispy-bootstrap4
 django-axes
 django-summernote
-mysqlclient
-Pillow
-psycopg[binary]
-gunicorn
-python-dotenv
+requests
+
