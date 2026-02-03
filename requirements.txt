@@ -1,5 +1,6 @@
-Django>=5.2
+Django
 gunicorn
+dj-database-url
 psycopg[binary]
 whitenoise
 django-crispy-forms
