@@ -200,12 +200,12 @@
 """
 Django settings for blog project.
 Production-ready for Render + PostgreSQL
-Compatible with Django 5.2+
 """
 
 import os
 from pathlib import Path
 from django.contrib.messages import constants
+import dj_database_url
 
 # --------------------------------------------------
 # BASE DIR
@@ -262,7 +262,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
 
-    # WhiteNoise (static no Render)
+    # Static no Render
     "whitenoise.middleware.WhiteNoiseMiddleware",
 
     "django.contrib.sessions.middleware.SessionMiddleware",
@@ -302,17 +302,14 @@ TEMPLATES = [
 ]
 
 # --------------------------------------------------
-# DATABASE (PostgreSQL - Render)
+# DATABASE (Render PostgreSQL)
 # --------------------------------------------------
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": os.getenv("POSTGRES_DB"),
-        "USER": os.getenv("POSTGRES_USER"),
-        "PASSWORD": os.getenv("POSTGRES_PASSWORD"),
-        "HOST": os.getenv("POSTGRES_HOST"),
-        "PORT": os.getenv("POSTGRES_PORT", "5432"),
-    }
+    "default": dj_database_url.parse(
+        os.getenv("DATABASE_URL"),
+        conn_max_age=600,
+        ssl_require=True,
+    )
 }
 
 # --------------------------------------------------
@@ -383,7 +380,7 @@ SESSION_COOKIE_SECURE = not DEBUG
 CSRF_COOKIE_SECURE = not DEBUG
 
 # --------------------------------------------------
-# DEFAULT LOGIN
+# LOGIN
 # --------------------------------------------------
 LOGIN_URL = "/accounts/login/"
 LOGIN_REDIRECT_URL = "/"
@@ -411,4 +408,5 @@ try:
     from .local_settings import *
 except ImportError:
     pass
+
 
