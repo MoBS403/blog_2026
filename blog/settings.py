@@ -22,7 +22,7 @@ SECRET_KEY = 'troque-essa-chave-em-producao'
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['https://blog-2026.onrender.com', 'blog-2026.onrender.com']
 
 
 # --------------------------------------------------
